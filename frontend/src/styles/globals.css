@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  @apply bg-gray-100 text-gray-800;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-sans font-bold;
+}
+
+a {
+  @apply text-blue-500 hover:text-blue-700;
+}
+
+button {
+  @apply bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600;
+}
+
+.container-custom {
+  @apply mx-auto px-4;
+}
+
+/* Avoid redefining core utility names like .flex or .grid to prevent circular @apply errors */
+.layout-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4;
+}
+
+.card {
+  @apply bg-white shadow-md rounded-lg p-4;
+}
+
+.footer {
+  @apply bg-gray-800 text-white py-4 text-center;
+}
